@@ -77,6 +77,6 @@ Exploratory Data Analysis performed to understand the relationships and patterns
 
 - **Promotional offers** should be launched during the **spring season** to attract customers post-pandemic.
 
-- **Significant Variables Affecting Bike Demand:`holiday`,`temp`,`humidity`,`windspeed`,`season`,`month`,`year,``Sunday`,`weathersit`
+- **Significant Variables Affecting Bike Demand**:`holiday`,`temp`,`humidity`,`windspeed`,`season`,`month`,`year,``Sunday`,`weathersit`
 
 ---
