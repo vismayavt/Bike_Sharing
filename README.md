@@ -1,56 +1,82 @@
-# 🚲 Bike-Sharing Demand Prediction
+# Bike-Sharing
 
-## 📌 Project Overview
+### Predicting daily bike rental counts based on environmental and seasonal settings
 
-Building a model to predict daily bike rental counts based on environmental and seasonal conditions.
+---
 
-## 🧩 Problem Statement
+## Problem Statement
 
-BoomBikes, a US-based bike-sharing provider, has faced a significant drop in revenue due to the COVID-19 pandemic. The company aims to understand the post-pandemic demand for shared bikes. The objective is to:
+BoomBikes, a US-based bike-sharing provider, has suffered a dip in revenues due to the COVID-19 pandemic. As the situation begins to normalize, the company wants to anticipate customer demand for bikes in a post-pandemic scenario.
 
-- Identify which variables significantly influence bike demand
-- Build a model to predict demand and guide strategic decisions
+**Key Business Questions:**
+- Which variables are significant in predicting bike demand?
+- How effectively can these variables describe changes in demand?
 
-## 🎯 Goal
+---
 
-Develop a predictive model to determine the significant factors influencing the demand for shared bikes. The model will assist management in crafting effective business strategies to meet customer demand.
+## Goal
 
-## 📊 Data Source
+To develop a predictive model that identifies the significant variables impacting daily bike rentals. This model will help management make informed decisions, adjust strategies, and meet customer expectations efficiently.
 
-- Dataset: `day.csv`
+---
 
-## 🛠 Tools Used
+## Data Source
 
-- Jupyter Notebook
-- Python
+- Dataset: `day.csv` (provided)
 
-## 🔧 Data Preparation Steps
+---
 
-- Data loading and initial inspection
-- Handling missing values
-- Data cleaning and formatting
+## Tools Used
 
-## 📈 Data Analysis
+- Python  
+- Jupyter Notebook  
+- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`
 
-Performed in a structured, business-aligned manner:
+---
 
-- Univariate analysis
-- Bivariate analysis
+## Data Preparation
 
-## 🧠 Model Building
+Tasks performed in the initial stage:
 
-- Target variable: `cnt` (total number of rentals, including casual and registered users)
-- Built a regression model to predict `cnt`
+- Data Loading and Inspection  
+- Handling Missing Values  
+- Data Cleaning and Formatting  
 
-## 🧪 Model Evaluation
+---
 
-```python
-from sklearn.metrics import r2_score
-r2_score(y_test, y_pred)
-## 📌 Conclusion
+## Data Analysis
 
-- 🌸 **Spring** is the ideal season to expand business due to favorable weather and increased outdoor activities.
-- 📆 **September** shows high demand — suitable for business promotions and growth initiatives.
-- 🌧 **Light snow or rain** typically sees a dip in demand — can be leveraged for maintenance work.
-- 📢 Post-pandemic, **launch promotional offers** especially in spring to attract more users.
-- 🎯 **Advertise aggressively in September** to capitalize on high booking rates.
+Exploratory Data Analysis performed to understand the relationships and patterns in the dataset:
+
+- **Univariate Analysis**  
+- **Bivariate Analysis**  
+
+---
+
+## Model Building
+
+- Target Variable: `cnt` (Total number of bike rentals including casual and registered users)  
+- Linear Regression model used to predict `cnt`  
+
+---
+
+## Model Evaluation
+
+- Metric: **R-squared (R²) Score**  
+- Evaluation Code:
+  ```python
+  from sklearn.metrics import r2_score
+  r2_score(y_test, y_pred)
+## Conclusion
+
+- The company's growth strategy should focus on **expanding operations during spring**, capitalizing on favorable weather and increased outdoor activity.
+
+- **September** shows a peak in demand — ideal for boosting **marketing and operations**.
+
+- **Light snow or rain** results in **lower demand** — this time can be utilized for **bike servicing** without significantly affecting business.
+
+- **Promotional offers** should be launched during the **spring season** to attract customers post-pandemic.
+
+- **Significant Variables Affecting Bike Demand:`holiday`,`temp`,`humidity`,`windspeed`,`season`,`month`,`year,``Sunday`,`weathersit`
+
+---
